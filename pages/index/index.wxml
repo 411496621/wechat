@@ -1,7 +1,8 @@
 <!--page/index/index.wxml-->
 <view class='indexContainer'>
-  <image src='/images/index/cart.jpg'></image>
-  <text class='userInfo'>hello {{msg}}</text>
+  <image src='{{avatarUrl}}'></image>
+  <text class='userInfo'>hello {{nickName}}</text>
+  <!-- <button  open-type='getUserInfo'>获取用户信息</button> -->
   <view  catchtap='gotoList'  class='start'>
      <text>开启小程序之旅</text>
   </view>  

@@ -22,7 +22,9 @@ image{
   font-size: 40rpx;
   font-weight: 700;
 }
-
+button{
+  margin-bottom: 10rpx;
+}
 .start{
   width: 300rpx;
   height:80rpx;

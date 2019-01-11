@@ -5,19 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-    msg:'初始化的数据'
+    avatarUrl:'',
+    nickName:''
   },
   gotoList(){
     wx.navigateTo({
       url: '/pages/list/list',
     })
   },
+  // setInfo(event){
+  //   console.log(event)
+  // },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.getUserInfo({
+      success:data=>{
+        const {nickName,avatarUrl} = data.userInfo
+        this.setData({
+          nickName,
+          avatarUrl
+        })
+      }
+    })
   },
 
   /**
