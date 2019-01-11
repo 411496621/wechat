@@ -15,8 +15,10 @@ Page({
     list:[]     
   },
   gotoDetail(event){
-    console.log(event)
-   
+    const index = event.currentTarget.dataset.index
+    wx.navigateTo({
+      url: '/pages/detail/detail?index='+index,
+    })
   },
   /**
    * 生命周期函数--监听页面加载

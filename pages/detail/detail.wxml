@@ -1,19 +1,19 @@
 <view class='detailContainer'>
-  <image class='detailImg' src='/images/detail/carousel/01.jpg'></image>
+  <image class='detailImg' src='{{listItem.detail_img}}'></image>
   <view class='avatar_date'>
-    <image src='/images/avatar/0.png'></image>
-    <text>钢铁侠</text>
+    <image src='{{listItem.avatar}}'></image>
+    <text>{{listItem.author}}</text>
     <text>发布于</text>
-    <text>2019</text>
+    <text>{{listItem.date}}</text>
   </view>
-  <text class='company'>教育理念</text>
+  <text class='company'>{{listItem.title}}</text>
   <view class='parent'>
     <view class='collection_share_container'>
-      <image bindtap='handleCollection' src='/images/icon/collection.png'></image>
+      <image catchtap='changedCollected'  src='{{isCollected?"/images/icon/collection.png":"/images/icon/collection-anti.png"}}'></image>
       <image src='/images/icon/share-anti.png'></image>
     </view>
     <view class='line'></view>
   </view>
   <button>转发次文章</button>
-  <text class='content'>XXXXXXXXXXXXXXXX</text>
+  <text class='content'>{{listItem.detail_content}}</text>
 </view>

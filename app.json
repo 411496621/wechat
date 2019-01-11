@@ -5,7 +5,7 @@
     "pages/detail/detail"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#8ED145",
+    "navigationBarBackgroundColor": "#489B81",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Welcome to atguigu"
   }

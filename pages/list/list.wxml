@@ -11,6 +11,6 @@
       <image src="{{item}}" ></image>
    </swiper-item>
 </swiper>
-<view catchtap='gotoDetail'  wx:for='{{list}}' wx:key='{{index}}' >
+<view catchtap='gotoDetail' data-index='{{index}}'  wx:for='{{list}}' wx:key='{{index}}' >
     <template  is="listTmp"  data='{{...item}}'  />
 </view>
