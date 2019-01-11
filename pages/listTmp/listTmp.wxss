@@ -1,0 +1,29 @@
+/* pages/listTmp/listTmp.wxss */
+.tmpContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.tmpImg {
+  width: 100%;
+  height: 460rpx;
+}
+
+.content {
+  font-size: 36rpx;
+  text-indent: 36rpx;
+  letter-spacing: 4rpx; /*给字母设置间距，对中文也生效*/
+  /* word-spacing: 50rpx; 给单词设置间距，对中文不生效 */
+}
+
+.star_view_container image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 8rpx;
+  vertical-align: middle;
+}
+.star_view_container text {
+  font-size: 24rpx;
+  margin-left: 8rpx;
+}

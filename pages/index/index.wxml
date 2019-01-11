@@ -1,2 +1,8 @@
 <!--page/index/index.wxml-->
-<text>page/index/index.wxml</text>
+<view class='indexContainer'>
+  <image src='/images/index/cart.jpg'></image>
+  <text class='userInfo'>hello {{msg}}</text>
+  <view  catchtap='gotoList'  class='start'>
+     <text>开启小程序之旅</text>
+  </view>  
+</view>

@@ -1,16 +1,11 @@
-// page/index/index.js
+// pages/datail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msg:'初始化的数据'
-  },
-  gotoList(){
-    wx.navigateTo({
-      url: '/pages/list/list',
-    })
+
   },
 
   /**

@@ -1,23 +1,30 @@
-// page/index/index.js
+// pages/list/list.js
+const data = require('../../datas/list-data.js') 
+const result = data.list_data
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msg:'初始化的数据'
+    imgArr:[
+       '/images/detail/carousel/01.jpg', 
+       '/images/detail/carousel/02.jpg', 
+       '/images/detail/carousel/03.jpg',
+       '/images/detail/carousel/04.jpg'],
+    list:[]     
   },
-  gotoList(){
-    wx.navigateTo({
-      url: '/pages/list/list',
-    })
+  gotoDetail(event){
+    console.log(event)
+   
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      list: result
+    })
   },
 
   /**
@@ -31,7 +38,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+  
   },
 
   /**

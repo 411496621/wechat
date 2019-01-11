@@ -1,0 +1,16 @@
+<!--pages/list/list.wxml-->
+<import src="/pages/listTmp/listTmp"  />  
+<swiper
+  autoplay
+  indicator-dots
+  circular
+  indicator-color="pink"
+  indicator-active-color="yellowgreen"
+>
+   <swiper-item wx:for='{{imgArr}}' wx:key="index">
+      <image src="{{item}}" ></image>
+   </swiper-item>
+</swiper>
+<view catchtap='gotoDetail'  wx:for='{{list}}' wx:key='{{index}}' >
+    <template  is="listTmp"  data='{{...item}}'  />
+</view>
